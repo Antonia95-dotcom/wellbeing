@@ -1,0 +1,53 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  color: #373fff;
+  font-size: 30px;
+}
+
+.navigationListContents {
+  width: 640px;
+}
+
+.navigationList {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 5px;
+  width: 100%;
+  list-style-type: none;
+}
+
+
+.navigationList li{
+  padding: 5px;
+  padding-right: 20px;
+}
+
+.waysBottomLinks{
+  display:flex;
+  justify-content: flex-end;
+}
+
+.waysBottomLink{
+  background-color: white;
+  border: 2px solid black;
+  font-size: 25px;
+  border-radius: 5px;
+  padding: 5px 20px;
+}
+
+.waysCard{
+  background-color: grey;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.waysImage{
+  width: 100%;
+}
