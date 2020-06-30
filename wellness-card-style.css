@@ -7,11 +7,17 @@ body {
 
 h1 {
   color: #373fff;
-  font-size: 30px;
+  font-size: 32px;
+}
+
+.page_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navigationListContents {
-  width: 640px;
+
 }
 
 .navigationList {
@@ -24,30 +30,86 @@ h1 {
 }
 
 
-.navigationList li{
+.navigationList li {
   padding: 5px;
-  padding-right: 20px;
+  padding-right: 0;
+  padding-left: 20px;
+}
+
+.navigationList li a {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333;
+}
+
+
+.navigationList li a:hover {
+  text-decoration: underline;
+  color: #373fff;
 }
 
 .waysBottomLinks{
   display:flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-.waysBottomLink{
+.waysBottomLink {
   background-color: white;
   border: 2px solid black;
-  font-size: 25px;
   border-radius: 5px;
   padding: 5px 20px;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+}
+
+.waysBottomLink:hover {
+  color: #373fff;
+  text-decoration: uppercase;
+  border-color: #373fff;
 }
 
 .waysCard{
-  background-color: grey;
-  border-radius: 10px;
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 8px;
   padding: 20px;
 }
 
+.waysInner {
+  display: flex;
+  align-items: flex-start;
+}
+
+.waysContent {
+  padding-left: 20px;;
+  width: 50%;
+}
+
 .waysImage{
-  width: 100%;
+  border-radius: 8px;
+  width: 50%;
+}
+
+@media only screen and (max-width: 850px) {
+  .waysInner {
+    display: block;
+    width: 100%;
+  }
+
+  .waysContent {
+    padding-left: 0;
+  }
+
+  .waysImage{
+    width: 100%;
+  }
+}
+
+
+.waysList li {
+  line-height: 1.4;
 }

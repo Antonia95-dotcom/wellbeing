@@ -3,9 +3,9 @@ div.nav {
 }
 
 header {
-    color: blue;
+    color: #373fff;
     font-weight: bold; 
-    font-size: 50px; 
+    font-size: 32px; 
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 20px;
 }
